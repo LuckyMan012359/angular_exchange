@@ -1,0 +1,16 @@
+<header class="container-fluid p-0">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="/assets/images/horizontal-logo.svg" alt="Logo" class="logo-img" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+        <button class="btn account-button" (click)="openModal()">Account</button>
+      </div>
+    </div>
+  </nav>
+  <app-acc-modal *ngIf="isModalOpen" (closeModal)="closeModal()"></app-acc-modal>
+</header>

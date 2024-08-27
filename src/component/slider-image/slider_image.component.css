@@ -1,0 +1,105 @@
+.carousel {
+    overflow: hidden;
+    max-width: 100%; /* Adjust to fit the parent container */
+    margin: 0 auto; /* Center the carousel */
+}
+
+.carousel-track {
+    display: flex;
+    gap: 60px;
+    width: calc(100% * 2);
+    animation: flow 100s linear infinite;
+}
+
+.carousel-track img {
+    width: auto;
+    height: 30px;
+}
+
+@keyframes flow {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 1100px) {
+    .carousel{
+        overflow: hidden;
+        max-width: 100%; 
+        margin: 0 auto;
+        width: 85%;
+    }
+    .carousel-track {
+        gap: 40px;
+        animation: flow 80s linear infinite;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel{
+        overflow: hidden;
+        max-width: 100%; 
+        margin: 0 auto;
+        width: 85%;
+    }
+    
+    .carousel-track {
+        gap: 30px;
+        animation: flow 60s linear infinite;
+    }
+}
+
+@media (max-width: 700px) {
+    .carousel{
+        overflow: hidden;
+        max-width: 100%; 
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .carousel-track {
+        gap: 30px;
+        animation: flow 60s linear infinite;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel{
+        overflow: hidden;
+        max-width: 100%; 
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .carousel-track {
+        gap: 20px;
+        animation: flow 50s linear infinite;
+    }
+
+    .carousel-track img {
+        height: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .carousel{
+        overflow: hidden;
+        max-width: 100%; 
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .carousel-track {
+        gap: 15px;
+        animation: flow 40s linear infinite;
+    }
+
+    .carousel-track img {
+        height: 15px;
+    }
+}

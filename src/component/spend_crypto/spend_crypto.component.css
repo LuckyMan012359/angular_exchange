@@ -1,0 +1,113 @@
+.index-product_reverse[data-v-7712230a] {
+    flex-direction: row-reverse;
+}
+
+.index-product[data-v-7712230a] {
+    align-items: stretch;
+    display: flex;
+    padding-bottom: 120px;
+}
+
+div,
+input,
+textarea {
+    font-family: Roboto, Quicksand, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+.index-spend-crypto[data-v-4e90716e] {
+    height: 100%;
+    -webkit-mask-image: linear-gradient(0deg, hsla(0, 0%, 85%, 0) 0, hsla(0, 0%, 85%, .1) var(--gradient-transition-1), #d9d9d9 var(--gradient-transition-2));
+    mask-image: linear-gradient(0deg, hsla(0, 0%, 85%, 0) 0, hsla(0, 0%, 85%, .1) var(--gradient-transition-1), #d9d9d9 var(--gradient-transition-2));
+    position: relative;
+    top: var(--top-transition);
+    width: 100%;
+}
+
+.index-spend-crypto__coin-1[data-v-4e90716e] {
+    left: 85px;
+    position: absolute;
+    top: 90px;
+    transform: rotate(var(--rotate-z));
+}
+
+a {
+    text-decoration: none;
+}
+
+.index-spend-crypto__coin-2[data-v-4e90716e] {
+    left: 200px;
+    position: absolute;
+    top: 0;
+    transform: rotate(var(--rotate-z));
+}
+
+.index-spend-crypto__coin-3[data-v-4e90716e] {
+    left: 110px;
+    position: absolute;
+    top: 10px;
+    transform: rotate(var(--rotate-z));
+}
+
+.index-spend-crypto__coin-4[data-v-4e90716e] {
+    left: 270px;
+    position: absolute;
+    top: 85px;
+    transform: rotate(var(--rotate-z));
+}
+
+.index-product__info-container[data-v-7712230a] {
+    flex-basis: 50%;
+    max-width: 546px;
+}
+
+.index-product__title[data-v-7712230a] {
+    font-size: 3.125rem;
+    font-weight: 700;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    color: white;
+}
+
+.index-product__text[data-v-7712230a] {
+    color: #a0789c;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    margin-bottom: 1rem;
+}
+
+.index-product__link-container[data-v-7712230a] {
+    margin-top: 2rem;
+}
+
+.index-product__link[data-v-7712230a] {
+    color: #e35760;
+    font-size: .875rem;
+    line-height: 1.125rem;
+    position: relative;
+}
+
+.index-product__link[data-v-7712230a]:after {
+    content: "›";
+    font-size: 1.5rem;
+    position: absolute;
+    right: -12px;
+}
+
+img {
+    border-style: none;
+}
+
+@media screen and (min-width: 1200px) {
+    .index-product[data-v-7712230a] {
+        opacity: var(--opacity-transition);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .index-product[data-v-7712230a] {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

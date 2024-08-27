@@ -1,0 +1,303 @@
+
+h1{
+    color: #ffffff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.recipient-container {
+    background-color: #1f1b2e;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    width: 500px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.exchange-box {
+    background-color: #1f1b2e;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15px;
+    /* padding: 20px; */
+    border-radius: 10px;
+    /* margin-bottom: 20px; */
+}
+
+.exchange-row {
+    display: flex;
+    flex-direction: row;
+    /* width: 300px; */
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.exchange-input input {
+    background-color: #3b314d;
+    border: none;
+    color: #ffffff;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.exchange-currency select {
+    background-color: #3b314d;
+    border: none;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.exchange-rate {
+    color: #A0789c;
+    font-size: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.coin {
+    font-size: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.address-box {
+    background-color: #2b233b;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.address-box label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.address-box input {
+    background-color: #3b314d;
+    border: none;
+    color: #ffffff;
+    padding: 10px;
+    width: calc(100% - 60px);
+    border-radius: 5px;
+}
+
+.paste-btn {
+    position: absolute;
+    right: 20px;
+    top: 63%;
+    transform: translateY(-50%);
+    background-color: #2b233b;
+    border: none;
+    color: #A0789c;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.paste-btn:hover {
+    color: #E35760;
+}
+
+.refund-box {
+    background-color: #2b233b;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.refund-notification {
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #A0789c;
+}
+
+.refund-header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.refund-checkbox {
+    margin-top: 10px;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.refund-checkbox input {
+    margin-right: 10px;
+}
+
+.refund-checkbox label a {
+    color: #E35760;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.next-btn {
+    background-color: #E35760;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+input[type="checkbox"]:checked {
+    accent-color: #E35760;
+}
+
+
+
+
+
+
+/* .exchange-container {
+  background-color: #2b1e33;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+} */
+
+
+
+.exchange-section {
+  background-color: #3b2a47;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.label {
+  color: #b0a3b3;
+  font-size: 12px;
+}
+
+.input-amount {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  width: 80px;
+}
+
+.output-amount {
+  color: #e0215e;
+  font-size: 18px;
+}
+
+.currency-select {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.currency-icon {
+  font-size: 18px;
+}
+
+.currency-name {
+  color: white;
+  font-size: 16px;
+}
+
+.arrow {
+  font-size: 12px;
+  color: #999;
+}
+
+.exchange-section + .exchange-section {
+  margin-left: 10px;
+}
+
+.exchange-container {
+    background-color: #1f1b2e;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .exchange-section {
+    background-color: #3b2a47;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 1;
+  }
+  
+  .label {
+    color: #b0a3b3;
+    font-size: 12px;
+  }
+  
+  .input-amount {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    width: 80px;
+  }
+  
+  .output-amount {
+    color: #e0215e;
+    font-size: 18px;
+  }
+  
+  .currency-select {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .currency-icon {
+    font-size: 18px;
+  }
+  
+  .currency-name {
+    color: white;
+    font-size: 16px;
+  }
+  
+  .arrow {
+    font-size: 12px;
+    color: #999;
+  }
+  
+  .exchange-section + .exchange-section {
+    margin-left: 10px;
+  }
+  
+  .exchange-boxs{
+    display: flex;
+    flex-direction: column;
+  }
+

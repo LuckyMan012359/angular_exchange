@@ -1,0 +1,25 @@
+<!-- swap-tracker.component.html -->
+<div class="swap-tracker-container">
+    <div class="swap-tracker">
+      <div class="swap-tracker-button" (click)="toggleTracker()">
+        <span>Swap Tracker</span>
+      </div>
+      <div class="swap-tracker-panel" *ngIf="isExpanded">
+        <input
+          type="text"
+          placeholder="Enter exchange ID"
+
+        />
+        <button [disabled]="!exchangeId" (click)="trackSwap()">TRACK YOUR SWAP</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- [(ngModel)]="exchangeId" -->
+
+
+
+
+
+  

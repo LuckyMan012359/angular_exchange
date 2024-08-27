@@ -1,0 +1,56 @@
+.connect_modal_container {
+    background-color: #1a1d26;
+    padding: 20px;
+    border-radius: 10px;
+    width: 488px;
+    height: 440px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.title {
+    border-bottom: 0.5px solid transparent;
+    border-color: var(--border-color);
+    padding-bottom: 20px;
+}
+
+.wallet {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 10px;
+}
+
+.wallet-section {
+    width: 220px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    border: solid 1px;
+}
+
+.first,
+.second {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+

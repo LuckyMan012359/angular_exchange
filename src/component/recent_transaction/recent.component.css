@@ -1,0 +1,151 @@
+.wrapper {
+    background-image: url(https://ff.io/assets/images/background/recent.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.center {
+    display: inline-block;
+    font-size: 48px;
+    color: white;
+    font-family: 'Montserrat', Arial;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+h2 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.recent_list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+.transaction-list {
+    color: #ffffff;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 660px; /* Limit max width */
+}
+
+.transaction {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #21284b;
+    flex-direction: row;
+}
+
+.transaction:last-child {
+    border-bottom: none;
+}
+
+
+
+.time {
+    flex: 2;
+    font-size: 14.5px;
+    font-family: 'Montserrat', Arial;
+    color: #aaa;
+}
+
+.amount {
+    flex: 1;
+    font-size: 14.5px;
+    font-family: 'Montserrat', Arial;
+    font-weight: bold;
+    display: flex;
+    /* justify-content: flex-end; */
+}
+
+.from {
+    flex: 2;
+    font-family: 'Montserrat', Arial;
+    font-size: 14.5px;
+    display: flex;
+    justify-content: center;
+}
+
+.status {
+    flex: 1;
+    font-size: 14.5px;
+    font-family: 'Montserrat', Arial;
+    color: #aaa;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* .time, .amount, .from, .status {
+    flex: 1;
+    font-size: 14.5px;
+    font-family: 'Montserrat', Arial;
+    color: #aaa;
+} */
+
+/* .amount {
+    font-weight: bold;
+    justify-content: flex-end;
+}
+
+.from {
+    flex: 2;
+    justify-content: center;
+}
+
+.status {
+    justify-content: flex-end;
+} */
+
+/* @media (max-width: 768px) {
+    .transaction {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .time, .amount, .from, .status {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    .amount, .status {
+        justify-content: flex-start;
+    }
+} */
+
+@media (max-width: 480px) {
+    .center {
+        font-size: 36px;
+        padding-bottom: 20px;
+    }
+
+    .transaction {
+        padding: 10px;
+    }
+
+    .time, .amount, .from, .status {
+        font-size: 12px;
+    }
+
+    /* .amount, .status {
+        justify-content: center;
+    } */
+}

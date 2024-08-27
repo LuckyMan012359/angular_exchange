@@ -1,0 +1,55 @@
+header {
+  width: 100%;
+}
+
+.navbar {
+  background-color: #28212b;
+  padding: 10px 0;
+}
+
+.logo-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.account-button {
+  border: 1px solid #e35760;
+  border-radius: 4px;
+  color: #e35760;
+  background-color: #28212b;
+  font-size: 0.8125rem;
+  height: 32px;
+  line-height: 1rem;
+  min-width: 115px;
+  padding: 0.4rem 0.5rem;
+  text-align: center;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 8px 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .account-button {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.45rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .account-button {
+    font-size: 0.7rem;
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .account-button {
+    font-size: 0.65rem;
+    min-width: 90px;
+  }
+}

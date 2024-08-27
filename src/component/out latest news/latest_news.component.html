@@ -1,0 +1,35 @@
+<div data-v-d34a68aa="" data-v-00c52d54="" class="index-news index__margin">
+    <h3 data-v-d34a68aa="" class="index-news__title">
+        Our latest news
+    </h3>
+    <div data-v-d34a68aa="" class="index-news__container">
+        <div data-v-7ecd4c5a="" data-v-d34a68aa="" class="index-news-carousel index-news__carousel">
+            <div class="slider">
+                <div class="slides" [style.transform]="transform">
+                    <div class="slide" *ngFor="let slide of slides; let i = index">
+                        <img [src]="slide.image" alt="Slide {{ i + 1 }}">
+                    </div>
+                </div>
+                <button (click)="prev()" class="nav-button prev">❮</button>
+                <button (click)="next()" class="nav-button next">❯</button>
+            </div>
+            
+        </div>
+        <div data-v-d34a68aa="" class="index-news__item">
+            <div data-v-1ceefdfe="" data-v-d34a68aa="" class="index-news-item">
+                <h4 data-v-1ceefdfe="" class="index-news-item__title">
+                    Anniversary contest: win with your creativity
+                </h4>
+                <div data-v-1ceefdfe="" class="index-news-item__date-time">
+                    12 Aug 2024 ◦ 2 min
+                </div>
+                <div data-v-1ceefdfe="" class="index-news-item__subtitle">
+                    Join SwapSpace’s graphic challenge — keep the birthday party going and win!
+                </div> <a data-v-1ceefdfe="" href="/news/anniversary-graphic-contest-win-with-your-creativity"
+                    class="index-news-item__link" target="_blank">
+                    Read more
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

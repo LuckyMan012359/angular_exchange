@@ -1,0 +1,79 @@
+<div class="title">
+    <svg data-v-382bcb72="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+        (click)="goToHome()">
+        <rect data-v-382bcb72="" x="0.5" y="0.5" width="23" height="23" rx="3.5" stroke="#E35760"></rect>
+        <path data-v-382bcb72="" d="M14.6667 17.334L9.33337 12.0007L14.6667 6.66732" stroke="#E35760" stroke-width="2"
+            stroke-miterlimit="10" stroke-linecap="round"></path>
+    </svg>
+    <h1>Enter the recipient address</h1>
+</div>
+
+<div class="recipient-container">
+    <div class="exchange-boxs">
+        <div class="exchange-row">
+            <div class="exchange-container">
+                <div class="exchange-box">
+                    <div class="exchange-section">
+                        <span class="label">You send</span>
+                        <input type="text" value="0.1" class="input-amount">
+                        <div class="currency-select">
+                            <span class="currency-icon">₿</span>
+                            <select
+                                style="background-color: #3b2a47; font-size: 16px; color: white; border-color: #3b2a47;">
+                                <option>BTC</option>
+                            </select>
+                            <span class="arrow">▼</span>
+                        </div>
+                    </div>
+                    <div class="exchange-section">
+                        <span class="label">You get</span>
+                        <span class="output-amount">2.21236948</span>
+                        <div class="currency-select">
+                            <span class="currency-icon">Ξ</span>
+                            <select
+                                style="background-color: #3b2a47; font-size: 16px; color: white; border-color: #3b2a47;">
+                                <option>ETH</option>
+                            </select>
+                            <span class="arrow">▼</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="exchange-row">
+            <div class="exchange-rate">
+                Exchange rate:
+            </div>
+            <div class="coin">
+                1 BTC = 22.297127899999996 ETH
+            </div>
+        </div>
+        <div class="exchange-row">
+
+        </div>
+    </div>
+
+    <div class="address-box">
+        <label for="recipient-address"
+            style="font-size: 13px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Provide
+            the ETH address:</label>
+        <div style="display: flex; flex-direction: row; ">
+            <input type="text" id="recipient-address" placeholder="Recipient address" />
+            <button class="paste-btn">Paste</button>
+        </div>
+
+    </div>
+
+    <div class="refund-box">
+        <div class="refund-header">
+            <div class="refund-notification">Refund address and notifications<div>
+                </div>
+                <div class="refund-checkbox">
+                    <input type="checkbox" id="terms" />
+                    <label for="terms">
+                        I accept the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
+                    </label>
+                </div>
+            </div>
+            <button class="next-btn">NEXT</button>
+        </div>

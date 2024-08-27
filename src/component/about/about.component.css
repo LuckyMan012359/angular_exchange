@@ -1,0 +1,32 @@
+.quick-main-container {
+  display: flex;
+  flex-direction: row;
+  /* width: 100%; */
+  max-width: 1200px;
+  justify-content: space-between;
+  gap: 280px;
+  padding: 20px;
+  /* padding-right: 300px; */
+  /* background-color: #27212b; */
+}
+
+.app__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 960px) {
+  .quick-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width:1440px) {
+  .quick-main-container {
+    gap: 100px;
+  }
+}

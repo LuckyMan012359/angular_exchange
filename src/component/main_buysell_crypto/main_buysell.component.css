@@ -1,0 +1,133 @@
+.index-product_reverse[data-v-7712230a] {
+    flex-direction: row-reverse;
+}
+
+.index-product[data-v-7712230a] {
+    align-items: stretch;
+    display: flex;
+}
+
+div,
+input,
+textarea {
+    font-family: Roboto, Quicksand, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+.index-buy-sell[data-v-2be100de] {
+    height: 100%;
+    -webkit-mask-image: linear-gradient(0deg, hsla(0, 0%, 85%, 0) 0, hsla(0, 0%, 85%, .1) var(--gradient-transition-1), #d9d9d9 var(--gradient-transition-2));
+    mask-image: linear-gradient(0deg, hsla(0, 0%, 85%, 0) 0, hsla(0, 0%, 85%, .1) var(--gradient-transition-1), #d9d9d9 var(--gradient-transition-2));
+    position: relative;
+    top: var(--top-transition);
+    width: 100%;
+    height: 300px;
+}
+
+.about-buy-sell-logo__separator {
+    background: linear-gradient(58deg, rgba(160, 120, 156, 0), #a0789c 51%, rgba(160, 120, 156, 0));
+    display: block;
+    height: 32px;
+    width: 1px;
+}
+
+.index-buy-sell__coin-1[data-v-2be100de],
+.index-buy-sell__coin-2[data-v-2be100de] {
+    position: absolute;
+    transform: rotate(var(--rotate-z));
+}
+
+.index-buy-sell__coin-1[data-v-2be100de] {
+    left: 254px;
+    top: 118px;
+}
+
+
+.index-buy-sell__coin-2[data-v-2be100de] {
+    left: 82px;
+    top: 0;
+}
+
+.index-buy-sell__coin-3[data-v-2be100de] {
+    left: -14px;
+    position: absolute;
+    top: 105px;
+    transform: rotate(var(--rotate-z));
+}
+
+.index-buy-sell__card[data-v-2be100de] {
+    left: 100px;
+    position: absolute;
+    top: 110px;
+}
+
+.index-product__info-container[data-v-7712230a] {
+    flex-basis: 50%;
+    max-width: 546px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.index-product__title[data-v-7712230a] {
+    font-size: 3.125rem;
+    font-weight: 700;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    color: white;
+}
+
+.index-product__text[data-v-7712230a] {
+    color: #a0789c;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    margin-bottom: 1rem;
+}
+
+.about-buy-sell-logo[data-v-660ee626] {
+    align-items: center;
+    display: flex;
+    max-width: 360px;
+    width: 100%;
+}
+
+.about-buy-sell-logo__container[data-v-660ee626] {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    gap: calc(50% - 39px);
+}
+
+.index-product__link-container[data-v-7712230a] {
+    margin-top: 2rem;
+    display: flex;
+}
+
+.index-product__link[data-v-7712230a] {
+    color: #e35760;
+    font-size: .875rem;
+    line-height: 1.125rem;
+    position: relative;
+}
+
+.index-product__link[data-v-7712230a]:after {
+    content: "›";
+    font-size: 1.5rem;
+    position: absolute;
+    right: -12px;
+}
+
+@media screen and (max-width:1000px) {
+    .index-product[data-v-7712230a] {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .index-product[data-v-7712230a] {
+        opacity: var(--opacity-transition);
+    }
+}

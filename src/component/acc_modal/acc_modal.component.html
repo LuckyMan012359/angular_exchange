@@ -1,0 +1,51 @@
+<!-- Modal Overlay -->
+<div class="modal-overlay" (click)="close()" *ngIf="isConModalOpen == false">
+    <div class="" (click)="$event.stopImmediatePropagation()">
+        <div class="account-container">
+            <div class="tab-container">
+                <div (click)="switchTab('Invaders')" [class.active-tab]="activeTab === 'Invaders'" class="tab">
+                    Invaders Club
+                </div>
+                <div (click)="switchTab('affiliate')" [class.active-tab]="activeTab === 'affiliate'" class="tab">
+                    Affiliate Program
+                </div>
+            </div>
+
+            <div *ngIf="activeTab === 'Invaders'" class="content">
+                <div class="send-section">
+                    <h3>Connect your wallet</h3>
+                    <div class="main-section">
+                        <div class="input-section">
+                            <div class="blocknative" (click)="openModal()">
+                                <img
+                                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTExLjQ4MTEgMzUuNTYyN0w1IDI0LjQwNkgxNy45MTU5TDI0LjM5NyAzNS41NjI3SDExLjQ4MTFaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMTcuOTE1OSAyNC40MDYySDVMMTEuNDgxMSAxMy4yMDMxSDI0LjM5N0wxNy45MTU5IDI0LjQwNjJaIiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXJfODc3Xzg5NjcxKSIvPgo8cGF0aCBkPSJNMzAuODMxOCAyNC40MDYxTDI0LjM5NyAxMy4yMDNIMTEuNDgxMUw1IDJIMzAuODMxOEw0My43NDc3IDI0LjQwNjFIMzAuODMxOFoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0zMC44MzE4IDQ2Ljc2NThINUwxMS40ODExIDM1LjU2MjdIMjQuMzk3TDMwLjgzMTggMjQuNDA2SDQzLjc0NzdMMzAuODMxOCA0Ni43NjU4WiIgZmlsbD0idXJsKCNwYWludDFfbGluZWFyXzg3N184OTY3MSkiLz4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQwX2xpbmVhcl84NzdfODk2NzEiIHgxPSI1LjAwNjA2IiB5MT0iMTguNzkzNiIgeDI9IjI0LjM4MjEiIHkyPSIxOC43OTM2IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiM1NUNDRkUiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNUU5M0VGIi8+CjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQxX2xpbmVhcl84NzdfODk2NzEiIHgxPSI1LjAwNjA2IiB5MT0iMzUuNTczIiB4Mj0iNDMuNzU4MSIgeTI9IjM1LjU3MyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgo8c3RvcCBzdG9wLWNvbG9yPSIjNTVDQ0ZFIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvciA9IiM1RTkzRUYiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8L3N2Zz4K">
+                                <span class="currency-icon">Blocknative</span>
+                            </div>
+                            <div class="currency-select">
+                            </div>
+                        </div>
+                        <button class="login_btn_disable">LOGIN</button>
+                    </div>
+                </div>
+            </div>
+
+            <div *ngIf="activeTab === 'affiliate'" class="content">
+                <div class="email-section">
+                    <span class="label">Email</span>
+                    <div class="input-section">
+                        <input type="text" value="1000" class="input-amount">
+                    </div>
+                </div>
+                <div class="password-section">
+                    <span class="label">Password</span>
+                    <div class="input-section">
+                        <input type="text" value="0.01655159" class="input-amount">
+                    </div>
+                </div>
+                <button class="login_btn_enable">LOGIN</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-connect-modal *ngIf="isConModalOpen" (closeModal)="closeConnectModal()"></app-connect-modal>

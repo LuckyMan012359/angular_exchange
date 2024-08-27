@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background: #27212b;
+    background-image: radial-gradient(800px 400px at 50% 150px, rgba(41, 23, 59, .3) 0, rgba(41, 23, 59, 0) 100%), radial-gradient(400px 300px at 40% 17%, rgba(83, 57, 125, .2) 0, rgba(41, 23, 59, 0) 100%), radial-gradient(300px 200px at 80% 25%, rgba(83, 57, 125, .2) 0, rgba(41, 23, 59, 0) 100%), radial-gradient(400px 300px at 67% 40%, rgba(83, 57, 125, .3) 0, rgba(41, 23, 59, 0) 100%), radial-gradient(300px 300px at 30% 50%, rgba(83, 57, 125, .2) 0, rgba(41, 23, 59, 0) 100%), radial-gradient(500px 600px at 40% 85%, rgba(227, 87, 96, .1) 0, rgba(41, 23, 59, 0) 100%), radial-gradient(400px 300px at 70% 83%, rgba(227, 87, 96, .1) 0, rgba(41, 23, 59, 0) 100%), radial-gradient(400px 500px at 35% 90%, rgba(83, 57, 125, .3) 0, rgba(41, 23, 59, 0) 100%);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+element.style {
+    --animation-transform: -9024px;
+    --animation-duration: 188s;
+}
+
+app-home {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    gap: 90px;
+    width: 100%;
+    background: #27212b;
+    background-image: radial-gradient(800px 400px at 50% 150px, rgba(41, 23, 59, .3) 0, rgba(41, 23, 59, 0) 100%), radial-gradient(400px 300px at 40% 17%, rgba(83, 57, 125, .2) 0, rgba(41, 23, 59, 0) 100%), radial-gradient(300px 200px at 80% 25%, rgba(83, 57, 125, .2) 0, rgba(41, 23, 59, 0) 100%), radial-gradient(400px 300px at 67% 40%, rgba(83, 57, 125, .3) 0, rgba(41, 23, 59, 0) 100%), radial-gradient(300px 300px at 30% 50%, rgba(83, 57, 125, .2) 0, rgba(41, 23, 59, 0) 100%), radial-gradient(500px 600px at 40% 85%, rgba(227, 87, 96, .1) 0, rgba(41, 23, 59, 0) 100%), radial-gradient(400px 300px at 70% 83%, rgba(227, 87, 96, .1) 0, rgba(41, 23, 59, 0) 100%), radial-gradient(400px 500px at 35% 90%, rgba(83, 57, 125, .3) 0, rgba(41, 23, 59, 0) 100%);
+    background-repeat: no-repeat;
+}
+
+app-root {
+    width: 100%;
+}
+
+app-footer {
+    width: 100%;
+}
+
+app-about {
+    display: flex;
+    flex-direction: column;
+}
+
+app-index-rates{
+    width: 100%;
+}

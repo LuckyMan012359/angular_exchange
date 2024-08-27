@@ -1,0 +1,84 @@
+/* swap-tracker.component.css */
+.swap-tracker-container {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.swap-tracker {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* .swap-tracker-button {
+  background-color: #36253b;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px 0 0 10px;
+  cursor: pointer;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+} */
+.swap-tracker-button {
+  background-color: #36293b;
+  border-radius: 16px 0 0 16px;
+  display: flex;
+  gap: 16px;
+  height: auto;
+  padding: 1.5rem 1rem;
+  transition: transform .5s ease;
+  cursor: pointer;
+  color: white;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.swap-tracker-panel {
+  background-color: #2c2231;
+  padding: 15px;
+  border-radius: 10px 0 0 10px;
+  margin-top: 5px;
+}
+
+.swap-tracker-panel input {
+  width: 200px;
+  padding: 18px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #27212b;
+  border-color: #27212b;
+}
+
+.swap-tracker-panel button {
+  width: 95%;
+  padding: 18px;
+  background-color: #6b4d68;
+  border-color: #6b4d68;
+  color: #a0789c;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.swap-tracker-panel button:disabled {
+  cursor: not-allowed;
+}
+
+/* div,
+input,
+textarea {
+  font-family: Roboto, Quicksand, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+} */
+
+@media screen and (max-width:1000px) {
+  .swap-tracker-container {
+    display: none;
+  }
+}

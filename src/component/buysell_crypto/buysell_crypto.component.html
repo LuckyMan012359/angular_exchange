@@ -1,0 +1,78 @@
+<h1 data-v-c4493ffe="" class="index-rates__title">
+    More than a&nbsp;crypto&nbsp;exchange
+</h1>
+<p data-v-c4493ffe="" class="index-rates__slogan">
+    We pick the best — you make a choice
+</p>
+<div class="crypto-container">
+
+    <div class="tab-container">
+        <div (click)="switchTab('exchange')" [class.active-tab]="activeTab === 'exchange'" class="tab">
+            Exchange Crypto
+        </div>
+        <div (click)="switchTab('buySell')" [class.active-tab]="activeTab === 'buySell'" class="tab">
+            Buy/Sell Crypto
+        </div>
+    </div>
+
+    <!-- Exchange Crypto Section -->
+    <div *ngIf="activeTab === 'exchange'" class="content">
+        <div class="send-section">
+            <span class="label" style="color: white; padding: 5px; ">You send</span>
+            <div class="input-section">
+                <input type="text" value="0.1" class="input-amount">
+                <div class="currency-select">
+                    <span class="currency-icon">₿</span>
+                    <span class="currency-name">BTC</span>
+                    <span class="arrow">▼</span>
+                </div>
+            </div>
+        </div>
+        <div class="get-section">
+            <span class="label" style="color: white; padding: 5px;">You get</span>
+            <div class="input-section">
+                <input type="text" value="2.22228008" class="input-amount">
+                <div class="currency-select">
+                    <span class="currency-icon">Ξ</span>
+                    <span class="currency-name">ETH</span>
+                    <span class="arrow">▼</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-section">
+            <button (click)="goToAbout()" class="exchange-button">Quick exchange</button>
+            <button class="view-offers-button">View offers</button>
+        </div>
+    </div>
+
+    <!-- Buy/Sell Crypto Section -->
+    <div *ngIf="activeTab === 'buySell'" class="content">
+        <div class="send-section">
+            <span class="label" style="color: white; padding: 5px;">You send</span>
+            <div class="input-section">
+                <input type="text" value="1000" class="input-amount">
+                <div class="currency-select">
+                    <span class="currency-icon">$</span>
+                    <span class="currency-name">USD</span>
+                    <span class="arrow">▼</span>
+                </div>
+            </div>
+        </div>
+        <div class="get-section">
+            <span class="label" style="color: white; padding: 5px;">You get</span>
+            <div class="input-section">
+                <input type="text" value="0.01655159" class="input-amount">
+                <div class="currency-select">
+                    <span class="currency-icon">₿</span>
+                    <span class="currency-name">BTC</span>
+                    <span class="arrow">▼</span>
+                </div>
+            </div>
+        </div>
+        <div class="button-section">
+            <button class="exchange-button">Quick exchange</button>
+            <button class="view-offers-button">View offers</button>
+        </div>
+    </div>
+</div>
