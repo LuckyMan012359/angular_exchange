@@ -8,8 +8,6 @@ import { AboutComponent } from 'src/component/about/about.component';
 import { RouterModule } from '@angular/router';
 
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
